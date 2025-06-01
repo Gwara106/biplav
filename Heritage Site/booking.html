@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Delhi Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/delhi-logo.png" alt="Delhi Tourism Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="heritage.html">Heritage</a></li>
+            <li><a href="booking.html" class="active">Hotel Booking</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Book Your Stay</h1>
+            <p class="tagline">Experience Luxury and Comfort in Delhi</p>
+        </header>
+
+        <section class="booking-form">
+            <form id="hotelBooking" onsubmit="return validateForm(event)">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hotel">Select Hotel *</label>
+                    <select id="hotel" name="hotel" required>
+                        <option value="">Choose a hotel...</option>
+                        <option value="taj">Taj Palace</option>
+                        <option value="oberoi">The Oberoi</option>
+                        <option value="leela">The Leela Palace</option>
+                        <option value="itc">ITC Maurya</option>
+                        <option value="hyatt">Hyatt Regency</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="roomType">Room Type *</label>
+                    <select id="roomType" name="roomType" required>
+                        <option value="">Select room type...</option>
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="executive">Executive Suite</option>
+                        <option value="presidential">Presidential Suite</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkIn">Check-in Date *</label>
+                    <input type="date" id="checkIn" name="checkIn" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkOut">Check-out Date *</label>
+                    <input type="date" id="checkOut" name="checkOut" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests *</label>
+                    <input type="number" id="guests" name="guests" min="1" max="4" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialRequests">Special Requests</label>
+                    <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Delhi Tourism. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            
+            const checkIn = new Date(document.getElementById('checkIn').value);
+            const checkOut = new Date(document.getElementById('checkOut').value);
+            
+            if (checkOut <= checkIn) {
+                alert('Check-out date must be after check-in date');
+                return false;
+            }
+
+            // Here you would typically send the form data to a server
+            alert('Booking submitted successfully! We will contact you shortly to confirm your reservation.');
+            document.getElementById('hotelBooking').reset();
+            return false;
+        }
+
+        // Set minimum date for check-in and check-out
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('checkIn').min = today;
+        document.getElementById('checkOut').min = today;
+    </script>
+</body>
+</html>
