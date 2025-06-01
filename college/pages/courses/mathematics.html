@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics - Windsurf College</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .course-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 5%;
+            margin-top: 80px;
+        }
+
+        .course-content {
+            padding: 2rem 5%;
+        }
+
+        .course-section {
+            margin-bottom: 3rem;
+        }
+
+        .faculty-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .faculty-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .faculty-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .timetable th, .timetable td {
+            padding: 1rem;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .timetable th {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .timetable tr:nth-child(even) {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../../images/logo.png" alt="College Logo">
+                <h1>Windsurf College</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="../academics.html" class="active"><i class="fas fa-graduation-cap"></i> Academics</a></li>
+                <li><a href="../admission.html"><i class="fas fa-user-plus"></i> Admission</a></li>
+                <li><a href="../gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="course-header">
+        <h1><i class="fas fa-square-root-alt"></i> Bachelor of Science in Mathematics</h1>
+        <p>Discover the beauty and power of mathematical thinking</p>
+    </div>
+
+    <main class="course-content">
+        <section class="course-section">
+            <h2>Course Overview</h2>
+            <p>The Bachelor of Science in Mathematics program offers a comprehensive study of pure and applied mathematics. Students develop strong analytical and problem-solving skills while exploring advanced mathematical concepts.</p>
+            
+            <h3>Key Features:</h3>
+            <ul>
+                <li>3-year undergraduate program</li>
+                <li>Advanced mathematics laboratory</li>
+                <li>Research opportunities</li>
+                <li>Expert faculty members</li>
+                <li>Regular seminars and workshops</li>
+                <li>Career guidance in various fields</li>
+            </ul>
+        </section>
+
+        <section class="course-section">
+            <h2>Faculty Members</h2>
+            <div class="faculty-list">
+                <div class="faculty-card">
+                    <img src="../../images/faculty4.jpg" alt="Dr. Emma Wilson">
+                    <h3>Dr. Emma Wilson</h3>
+                    <p>Ph.D. in Pure Mathematics</p>
+                    <p>Specialization: Abstract Algebra</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="../../images/faculty5.jpg" alt="Dr. Robert Taylor">
+                    <h3>Dr. Robert Taylor</h3>
+                    <p>Ph.D. in Applied Mathematics</p>
+                    <p>Specialization: Mathematical Physics</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="../../images/faculty6.jpg" alt="Prof. Lisa Chen">
+                    <h3>Prof. Lisa Chen</h3>
+                    <p>Ph.D. in Statistics</p>
+                    <p>Specialization: Probability Theory</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-section">
+            <h2>Class Schedule</h2>
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 - 10:30</td>
+                        <td>Calculus</td>
+                        <td>Linear Algebra</td>
+                        <td>Number Theory</td>
+                        <td>Statistics</td>
+                        <td>Real Analysis</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 12:15</td>
+                        <td>Abstract Algebra</td>
+                        <td>Differential Equations</td>
+                        <td>Complex Analysis</td>
+                        <td>Topology</td>
+                        <td>Mathematical Logic</td>
+                    </tr>
+                    <tr>
+                        <td>1:15 - 2:45</td>
+                        <td>Numerical Methods</td>
+                        <td>Probability Theory</td>
+                        <td>Graph Theory</td>
+                        <td>Mathematical Modeling</td>
+                        <td>Research Seminar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 College Road, Education City</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                <p><i class="fas fa-envelope"></i> info@windsurfcollege.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../facilities.html">Facilities</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Windsurf College. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Literature - Windsurf College</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .course-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 5%;
+            margin-top: 80px;
+        }
+
+        .course-content {
+            padding: 2rem 5%;
+        }
+
+        .course-section {
+            margin-bottom: 3rem;
+        }
+
+        .faculty-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .faculty-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .faculty-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .timetable th, .timetable td {
+            padding: 1rem;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .timetable th {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .timetable tr:nth-child(even) {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../../images/logo.png" alt="College Logo">
+                <h1>Windsurf College</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="../academics.html" class="active"><i class="fas fa-graduation-cap"></i> Academics</a></li>
+                <li><a href="../admission.html"><i class="fas fa-user-plus"></i> Admission</a></li>
+                <li><a href="../gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="course-header">
+        <h1><i class="fas fa-book"></i> Bachelor of Arts in English Literature</h1>
+        <p>Explore the world through the lens of literature</p>
+    </div>
+
+    <main class="course-content">
+        <section class="course-section">
+            <h2>Course Overview</h2>
+            <p>The Bachelor of Arts in English Literature program offers a comprehensive study of literary works across different periods, cultures, and genres. Students develop critical thinking, analytical skills, and creative expression through the study of classic and contemporary literature.</p>
+            
+            <h3>Key Features:</h3>
+            <ul>
+                <li>3-year undergraduate program</li>
+                <li>Extensive library resources</li>
+                <li>Creative writing workshops</li>
+                <li>Literary seminars and discussions</li>
+                <li>Publication opportunities</li>
+                <li>Drama and theater activities</li>
+            </ul>
+        </section>
+
+        <section class="course-section">
+            <h2>Faculty Members</h2>
+            <div class="faculty-list">
+                <div class="faculty-card">
+                    <img src="../../images/faculty13.jpg" alt="Dr. Elizabeth Parker">
+                    <h3>Dr. Elizabeth Parker</h3>
+                    <p>Ph.D. in English Literature</p>
+                    <p>Specialization: Victorian Literature</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="../../images/faculty14.jpg" alt="Dr. William Hughes">
+                    <h3>Dr. William Hughes</h3>
+                    <p>Ph.D. in Comparative Literature</p>
+                    <p>Specialization: Modern Poetry</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="../../images/faculty15.jpg" alt="Prof. Jane Foster">
+                    <h3>Prof. Jane Foster</h3>
+                    <p>Ph.D. in Creative Writing</p>
+                    <p>Specialization: Contemporary Fiction</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-section">
+            <h2>Class Schedule</h2>
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 - 10:30</td>
+                        <td>British Literature</td>
+                        <td>American Literature</td>
+                        <td>World Literature</td>
+                        <td>Literary Theory</td>
+                        <td>Creative Writing</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 12:15</td>
+                        <td>Poetry Analysis</td>
+                        <td>Shakespeare Studies</td>
+                        <td>Modern Drama</td>
+                        <td>Novel Studies</td>
+                        <td>Literary Criticism</td>
+                    </tr>
+                    <tr>
+                        <td>1:15 - 2:45</td>
+                        <td>Writing Workshop</td>
+                        <td>Contemporary Lit</td>
+                        <td>Research Methods</td>
+                        <td>Film & Literature</td>
+                        <td>Thesis Seminar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 College Road, Education City</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                <p><i class="fas fa-envelope"></i> info@windsurfcollege.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../facilities.html">Facilities</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Windsurf College. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

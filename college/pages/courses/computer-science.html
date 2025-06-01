@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science - Windsurf College</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .course-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 5%;
+            margin-top: 80px;
+        }
+
+        .course-content {
+            padding: 2rem 5%;
+        }
+
+        .course-section {
+            margin-bottom: 3rem;
+        }
+
+        .faculty-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .faculty-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .faculty-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .timetable th, .timetable td {
+            padding: 1rem;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .timetable th {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .timetable tr:nth-child(even) {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../../images/logo.png" alt="College Logo">
+                <h1>Windsurf College</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="../academics.html" class="active"><i class="fas fa-graduation-cap"></i> Academics</a></li>
+                <li><a href="../admission.html"><i class="fas fa-user-plus"></i> Admission</a></li>
+                <li><a href="../gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="course-header">
+        <h1><i class="fas fa-laptop-code"></i> Bachelor of Science in Computer Science</h1>
+        <p>A comprehensive program designed to prepare you for the digital future</p>
+    </div>
+
+    <main class="course-content">
+        <section class="course-section">
+            <h2>Course Overview</h2>
+            <p>The Bachelor of Science in Computer Science program at Windsurf College is designed to provide students with a strong foundation in computer science principles, programming languages, and software development. Our curriculum combines theoretical knowledge with practical applications, preparing students for successful careers in technology.</p>
+            
+            <h3>Key Features:</h3>
+            <ul>
+                <li>4-year undergraduate program</li>
+                <li>State-of-the-art computer laboratories</li>
+                <li>Industry-aligned curriculum</li>
+                <li>Expert faculty with industry experience</li>
+                <li>Regular workshops and seminars</li>
+                <li>Internship opportunities with leading tech companies</li>
+            </ul>
+        </section>
+
+        <section class="course-section">
+            <h2>Faculty Members</h2>
+            <div class="faculty-list">
+                <div class="faculty-card">
+                    <img src="../../images/faculty1.jpg" alt="Dr. John Smith">
+                    <h3>Dr. John Smith</h3>
+                    <p>Ph.D. in Computer Science</p>
+                    <p>Specialization: Artificial Intelligence</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="../../images/faculty2.jpg" alt="Dr. Sarah Johnson">
+                    <h3>Dr. Sarah Johnson</h3>
+                    <p>Ph.D. in Software Engineering</p>
+                    <p>Specialization: Web Technologies</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="../../images/faculty3.jpg" alt="Prof. Michael Chen">
+                    <h3>Prof. Michael Chen</h3>
+                    <p>M.Tech in Computer Science</p>
+                    <p>Specialization: Database Systems</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-section">
+            <h2>Class Schedule</h2>
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 - 10:30</td>
+                        <td>Data Structures</td>
+                        <td>Programming Lab</td>
+                        <td>Algorithm Design</td>
+                        <td>Web Development</td>
+                        <td>Database Systems</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 12:15</td>
+                        <td>Computer Networks</td>
+                        <td>Operating Systems</td>
+                        <td>Programming Lab</td>
+                        <td>Software Engineering</td>
+                        <td>Project Work</td>
+                    </tr>
+                    <tr>
+                        <td>1:15 - 2:45</td>
+                        <td>Artificial Intelligence</td>
+                        <td>Machine Learning</td>
+                        <td>Cloud Computing</td>
+                        <td>Cybersecurity</td>
+                        <td>Technical Seminar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 College Road, Education City</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                <p><i class="fas fa-envelope"></i> info@windsurfcollege.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../facilities.html">Facilities</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Windsurf College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

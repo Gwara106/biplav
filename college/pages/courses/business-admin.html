@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Administration - Windsurf College</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .course-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 5%;
+            margin-top: 80px;
+        }
+
+        .course-content {
+            padding: 2rem 5%;
+        }
+
+        .course-section {
+            margin-bottom: 3rem;
+        }
+
+        .faculty-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .faculty-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .faculty-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .timetable th, .timetable td {
+            padding: 1rem;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .timetable th {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .timetable tr:nth-child(even) {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../../images/logo.png" alt="College Logo">
+                <h1>Windsurf College</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="../academics.html" class="active"><i class="fas fa-graduation-cap"></i> Academics</a></li>
+                <li><a href="../admission.html"><i class="fas fa-user-plus"></i> Admission</a></li>
+                <li><a href="../gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="course-header">
+        <h1><i class="fas fa-briefcase"></i> Bachelor of Business Administration</h1>
+        <p>Developing future business leaders</p>
+    </div>
+
+    <main class="course-content">
+        <section class="course-section">
+            <h2>Course Overview</h2>
+            <p>The Bachelor of Business Administration program prepares students for leadership roles in the corporate world. Through a comprehensive curriculum covering management, finance, marketing, and operations, students develop the skills needed for successful business careers.</p>
+            
+            <h3>Key Features:</h3>
+            <ul>
+                <li>3-year undergraduate program</li>
+                <li>Industry partnerships</li>
+                <li>Case study approach</li>
+                <li>Business incubation center</li>
+                <li>Corporate internships</li>
+                <li>Leadership development</li>
+            </ul>
+        </section>
+
+        <section class="course-section">
+            <h2>Faculty Members</h2>
+            <div class="faculty-list">
+                <div class="faculty-card">
+                    <img src="../../images/faculty19.jpg" alt="Dr. Michael Ross">
+                    <h3>Dr. Michael Ross</h3>
+                    <p>Ph.D. in Business Management</p>
+                    <p>Specialization: Strategic Management</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="../../images/faculty20.jpg" alt="Dr. Susan Lee">
+                    <h3>Dr. Susan Lee</h3>
+                    <p>Ph.D. in Marketing</p>
+                    <p>Specialization: Digital Marketing</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="../../images/faculty21.jpg" alt="Prof. David Clark">
+                    <h3>Prof. David Clark</h3>
+                    <p>MBA, CFA</p>
+                    <p>Specialization: Finance</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-section">
+            <h2>Class Schedule</h2>
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 - 10:30</td>
+                        <td>Management Principles</td>
+                        <td>Marketing Management</td>
+                        <td>Financial Management</td>
+                        <td>Business Economics</td>
+                        <td>Operations Management</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 12:15</td>
+                        <td>Business Statistics</td>
+                        <td>Human Resources</td>
+                        <td>Strategic Management</td>
+                        <td>Business Law</td>
+                        <td>Project Management</td>
+                    </tr>
+                    <tr>
+                        <td>1:15 - 2:45</td>
+                        <td>Digital Marketing</td>
+                        <td>Entrepreneurship</td>
+                        <td>Business Ethics</td>
+                        <td>International Business</td>
+                        <td>Case Studies</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 College Road, Education City</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                <p><i class="fas fa-envelope"></i> info@windsurfcollege.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../facilities.html">Facilities</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Windsurf College. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
